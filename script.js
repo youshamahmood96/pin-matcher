@@ -48,8 +48,8 @@ function checkPin(id1,id2,id3,id4,id5){
     const correctMatchMessage = document.getElementById('correct-match-message')
     var numberOfTries = document.getElementById(id4).innerText
     var tryNumber = parseInt(numberOfTries)
-    if(pinDisplay.length<=0){
-        alert('No Pin Generated')
+    if(pinDisplay.length<=0 || typedPin.length<=0){
+        alert('No Pin Generated / No pin typed')
     }
     else{
         if(pinTyped === pinGenerated){
