@@ -49,7 +49,7 @@ function checkPin(id1,id2,id3,id4,id5){
     var numberOfTries = document.getElementById(id4).innerText
     var tryNumber = parseInt(numberOfTries)
     if(pinDisplay.length<=0 || typedPin.length<=0){
-        alert('No Pin Generated / No pin typed')
+        alert('No Pin Generated / No Input Typed')
     }
     else{
         if(pinTyped === pinGenerated){
@@ -68,7 +68,7 @@ function checkPin(id1,id2,id3,id4,id5){
             else{
                 errorMessage.style.display = 'block'
                 correctMatchMessage.style.display = 'none'
-                submitButton.style.display = 'none'
+                submitButton.disabled = true
             }
         }
     }
