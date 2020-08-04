@@ -15,6 +15,9 @@ body {
     padding: 30px;
     text-align: center;
 }
+#pin-display{
+    background-color: #3D4153;
+}
 .generate-btn{
     margin-top: 140px;
     width: 180px;
