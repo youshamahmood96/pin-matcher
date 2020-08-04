@@ -55,7 +55,7 @@ function checkPin(id1,id2,id3,id4,id5){
         if(pinTyped === pinGenerated){
             errorMessage.style.display = 'none'
             correctMatchMessage.style.display = 'block'
-            submitButton.style.display = 'none'
+            submitButton.disabled=true
             triesLeft.style.display = 'none'
             }
         else{
